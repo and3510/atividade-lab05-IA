@@ -25,10 +25,10 @@ pip install torch datasets transformers
 4. A execucao esta dividida nos dois scripts principais do motor de otimizacao e teste:
 ```bash
 # Para rodar o Loop de Treinamento (Tarefa 3)
-python3 tarefa3_treinamento.py
+python3 tarefa3.py
 
 # Para rodar a Prova de Fogo de memorizacao (Tarefa 4)
-python3 tarefa4_overfitting.py
+python3 tarefa4.py
 ```
 
 ## O que o script faz
