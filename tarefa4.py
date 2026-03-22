@@ -45,9 +45,7 @@ def autoregressive_inference(model, encoder_input, tokenizer, max_new_tokens=32)
     # Retorna o texto decodificado de volta para humano
     return tokenizer.decode(generated_tokens)
 
-# =============================================================================
 # O Teste de Overfitting (Prova de Fogo)
-# =============================================================================
 def executar_prova_de_fogo():
     print(" Tarefa 4: A Prova de Fogo (Overfitting Test)")
     

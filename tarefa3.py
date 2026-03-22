@@ -10,8 +10,9 @@ from tarefa2 import tokenize_data
 # Importando o SEU modelo traduzido para PyTorch
 from meu_modelo import Transformer 
 
+
 def treinar_modelo():
-    print("--- Tarefa 3: Motor de Otimização ---")
+    print(" Tarefa 3: Motor de Otimização ")
     
     # 1. Carregando e preparando os dados
     raw_data = get_mini_dataset()
@@ -53,7 +54,7 @@ def treinar_modelo():
             src = batch['encoder_input_ids'] 
             tgt = batch['decoder_input_ids'] 
             
-            # --- TEACHER FORCING ---
+            #  TEACHER FORCING 
             # O decoder recebe a frase inteira, exceto o último token
             tgt_input = tgt[:, :-1]
             # O gabarito (target) é a frase deslocada 1 posição para a direita
